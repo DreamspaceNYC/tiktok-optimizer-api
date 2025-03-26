@@ -12,3 +12,25 @@ This project is a lightweight video processor built to automatically download vi
 - Deployable via Railway (Docker-based)
 
 ## API Endpoint
+
+### Response:
+Returns the optimized `.mp4` file if successful.
+
+### Errors:
+- `400`: Missing URL parameter
+- `500`: Video fetch or optimization error
+
+## Deployment
+
+To deploy:
+
+```bash
+# Clone the repo
+git clone https://github.com/hack-codes/yt-ffmpeg-tiktok.git
+cd yt-ffmpeg-tiktok
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the server
+python server.py
